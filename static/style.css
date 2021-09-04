@@ -1,0 +1,46 @@
+h1{
+    font-size: 70px;
+    color : black;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color : grey;
+}
+
+.nav a:hover{
+    color : rgb(224, 24, 24);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.active{
+    color : black;
+}
+
+div{
+    width : 100%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav a {
+    margin: 20px;
+    font-size: 25px;
+}
+
+p{
+    font-size : 20px;
+}
