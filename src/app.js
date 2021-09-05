@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const forecast = require('../utils/forecast');
 const geocode = require('../utils/geocode');
+const port = process.env.PORT ||3000;
 
 const publicDirectoryPath = path.join(__dirname, '../static');
 
@@ -62,7 +63,7 @@ app.get('*' , (req,res)=>{
 
 
 
-app.listen(3000 , ()=>{
-  console.log('listening on port no. 3000');
+app.listen(port , ()=>{
+  console.log('listening on port no. '+ port);
 });
 

@@ -23,7 +23,7 @@ button.addEventListener('submit' , (e)=>{
     msg2.textContent = 'loading...'
     msg1.textContent = '';
     
-     fetch('http://localhost:3000/weather?address='+ inputVal).then((response)=>{
+     fetch('/weather?address='+ inputVal).then((response)=>{
          response.json().then((data)=>{
              if(data.error){
                 //  console.log(data.error);
